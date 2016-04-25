@@ -21,6 +21,7 @@ public class PenalidadeID implements Serializable {
     @NotNull(message = "O numero de penalidades deve ser informado")
     @Column(name = "numero_penalidade", nullable = false)
     private Integer numeroPenalidade;
+   
     @NotNull(message = "O emprestimo deve ser informado")
     @ManyToOne
     @JoinColumn(name = "emprestimo", referencedColumnName = "codigo", nullable = false)
